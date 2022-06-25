@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1F2937;
+    box-sizing: border-box;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    width: 354px;
+    height: 80px;
+    /* left: 52px;
+    top: 118px; */
+    margin-bottom: 5px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+
+    letter-spacing: -0.025em;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #FFFFFF;
+     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+span {
+    color: #10B981;
+}
+
+#sub-header {
+    margin-top: 5px;
+    width: 372px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 51px;
+    /* identical to box height, or 140% */
+
+
+    /* Medium grey */
+
+    color: #9CA3AF;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    gap: 12px;
+
+    width: 223px;
+    height: 42px;
+    left: 52px;
+    top: 287px;
+
+    background: #10B981;
+    /* shadow/sm */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    /* text-base/leading-6/font-medium */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+hr {
+    /* position: absolute; */
+    width: 446px;
+    height: 0px;
+    left: 52px;
+    top: 364px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 1px solid #2F3E53;
+}
+
+.item {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #55F991;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    flex: 30%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    /* background: #273549; */
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#box {
+    width: 20px;
+}
+
+input {
+    background: #273549;
+    color: #10B981;
+    text-align: center;
+    /* width: 150px; */
+}

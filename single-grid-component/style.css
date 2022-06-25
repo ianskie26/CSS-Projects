@@ -1,0 +1,166 @@
+/* Declarations */
+:root {
+  --white: #ffffff;
+  --cyan: hsl(179, 62%, 40%);
+  --light-cyan: hsl(179, 62%, 45%);
+  --yellow: hsl(71, 73%, 54%);
+  --dark-yellow: hsl(71, 73%, 45%);
+  --light-gray: hsl(204, 43%, 93%);
+  --gray-blue: hsl(218, 22%, 67%);
+  --paddingY: 1.8rem;
+  --paddingX: 1.5rem;
+}
+/* Declarations */
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.3;
+  font-family: 'Karla', sans-serif;
+  color: var(--gray-blue);
+  background-color: var(--light-gray);
+  padding: var(--paddingX);
+}
+/* Global Styles */
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.15;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+.pricing-grid {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.pricing-grid > * {
+  padding: var(--paddingX) var(--paddingY);
+}
+
+.community {
+  background-color: var(--white);
+}
+
+.community h1 {
+  color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.community h2 {
+  color: var(--yellow);
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.community p {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.subscription, .why-us {
+  color: var(--light-gray);
+}
+.subscription {
+  background-color: var(--cyan);
+}
+
+.subscription a {
+  display: block;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: opacity 200ms ease;
+}
+
+.subscription a:hover {
+  /* background-color: var(--dark-yellow); */
+  opacity: 0.8;
+}
+
+.subscription p {
+  margin-bottom: 1.75rem;
+}
+
+.subscription-price {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.subscription-price span {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-left: 0.5rem;
+}
+
+.subscription-price h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subscription-price p {
+  font-size: 0.85rem;
+}
+
+.why-us {
+  background-color: var(--light-cyan);
+}
+
+.why-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.why-us ul li {
+  font-size: 0.85rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 3em;
+}
+
+@media only screen and (min-width: 42em) {
+  .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      max-width: 40rem;
+  }
+
+  .community {
+    grid-column: 1 / 3;
+  }
+
+}
